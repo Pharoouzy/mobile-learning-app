@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Parent theme for all Pre-Lollipop and Lollipop above i.e. For all devices. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- For ripple effect -->
+        <item name="colorControlHighlight">#a67e7c7c</item>
+        <item name="colorButtonNormal">#4baae1</item>
+        <item name="colorControlActivated">#f91462</item>
+        <item name="windowActionModeOverlay">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/customActivityAnimation</item>-->
+        <item name="actionModeStyle">@style/MyActionMode</item>
+        <!--<item name="textColorError">@color/error_color2</item>-->
+
+        <!-- Transition Overlap - Either Specify here or Specify in the Activity -->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+    </style>
+
+    <style name="SuperMaterialTheme.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="customActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    
+    <style name="MyActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/contextual_background</item>
+        <item name="titleTextStyle">@style/MyTextStyle</item>
+
+        <!-- Change the default icon of the Action Mode <item name="actionModeCloseDrawable">@drawable/ic_refresh_white_18dp</item> -->
+
+    </style>
+
+    <style name="MyTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/contextualColor</item>
+    </style>
+
+    <!--// Customizing  the toolbar make sure you define it in toolbar.xml file -->
+    <style name="MytoolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Text color for Toolbar Title -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Color of Overflow Menu and navigation drawer icon -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!--// Customizing  the popupmenu -->
+    <style name="MyPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- popup menu background color -->
+        <item name="android:background">@color/overflowMenuBg</item>
+        <!-- Text color of the popup menu -->
+        <item name="android:textColorPrimary">@color/grey_800</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pharoouzy.dataprocessing">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppMaterialTheme">
+        <activity
+            android:name=".Splashscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".Topic1Activity" />
+        <activity
+            android:name=".ContentsActivity"
+            android:theme="@style/SuperMaterialTheme.SlidrActivityTheme" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".QuizPromptActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ScoreCardActivity" />
+        <activity android:name=".AboutDeveloperActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".NoteListActivity" />
+        <activity android:name=".Topic2Activity" />
+        <activity android:name=".Topic3Activity" />
+        <activity android:name=".Topic4Activity" />
+        <activity android:name=".ReviewQuestionsActivity"></activity>
+    </application>
+
+</manifest>

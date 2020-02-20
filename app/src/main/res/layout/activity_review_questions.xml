@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/quizBG"
+    tools:context=".ReviewQuestionsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/secondToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:popupTheme="@style/MyPopupTheme"
+        android:background="#EF3254"
+        app:titleTextColor="@android:color/white"
+        android:layout_marginTop="55dp"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:padding="16dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/question"
+                android:gravity="left"
+                android:text="Question text view"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_height="110dp"
+                />
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 1"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/option_btn_color"
+                android:padding="15dp"
+                android:text="Button 2"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/option3"
+                android:text="Button 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 4"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="18dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_marginTop="45dp"
+                    android:padding="16dp"
+                    android:background="#F96817"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Return to Lesson"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

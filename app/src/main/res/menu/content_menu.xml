@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/ic_note"
+        android:orderInCategory="100"
+        android:title="My Notes"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_white"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ref"
+        android:orderInCategory="100"
+        android:title="References"
+        app:showAsAction="never" />
+
+
+</menu>

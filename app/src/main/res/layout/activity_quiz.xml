@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/quizBG"
+    tools:context=".QuizActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:padding="16dp"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical"
+            >
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:id="@+id/status"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:text="Question 1 of 2" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/score"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:text="Score: 100" />-->
+            <!--</RelativeLayout>-->
+
+
+            <TextView
+                android:id="@+id/question"
+                android:gravity="left"
+                android:text="Question text view"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_height="110dp"
+                />
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 1"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="22dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/option_btn_color"
+                android:padding="22dp"
+                android:text="Button 2"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/option3"
+                android:text="Button 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="22dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 4"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:padding="22dp"
+                android:textColor="@android:color/white"
+                android:background="@color/option_btn_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_marginTop="45dp"
+                    android:padding="18dp"
+                    android:background="#F96817"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next Question"
+                    />
+            </LinearLayout>
+            <!--<RadioGroup-->
+                 <!--android:id="@+id/optionGroup"-->
+                 <!--android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:layout_below="@+id/nextBtn"-->
+                 <!--android:layout_marginTop="12dp"-->
+                 <!--android:visibility="visible">-->
+
+                 <!--<RadioButton-->
+                     <!--android:id="@+id/optio1"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:layout_below="@+id/nextBtn"-->
+                     <!--android:layout_marginLeft="50dp"-->
+                     <!--android:text="Option 1" />-->
+
+                 <!--<RadioButton-->
+                     <!--android:id="@+id/optio2"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:layout_below="@+id/nextBtn"-->
+                     <!--android:layout_marginLeft="50dp"-->
+                     <!--android:text="Option 1" />-->
+
+                 <!--<RadioButton-->
+                     <!--android:id="@+id/optio3"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:layout_below="@+id/nextBtn"-->
+                     <!--android:layout_marginLeft="50dp"-->
+                     <!--android:text="Option 1" />-->
+
+                 <!--<RadioButton-->
+                     <!--android:id="@+id/optio4"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:layout_below="@+id/nextBtn"-->
+                     <!--android:layout_marginLeft="50dp"-->
+                     <!--android:text="Option 1" />-->
+
+             <!--</RadioGroup>-->
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

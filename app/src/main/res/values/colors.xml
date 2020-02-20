@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="navigationBarColor">#303F9F</color>
+    <color name="navBarColor">#303F9F</color>
+    <color name="quizBarColor">#222222</color>
+    <color name="quizStatusBarColor">#181818</color>
+    <color name="quizNavBarColor">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="contextual_background">#80a5cf</color>
+    <color name="contextualColor">#ffffff</color>
+    <color name="quizBG">#000000</color>
+    <color name="overflowMenuBg">#FFFFFF</color>
+    <color name="splashTextColor">#0a0d29</color>
+    <color name="grey_800">#000000</color>
+    <color name="error_color">#ff6a00</color>
+    <color name="correct_color">#24B45D</color>
+    <color name="wrong_color">#DC1F26</color>
+    <color name="option_btn_color">#222222</color>
+    <color name="scoreBG">#020b49</color>
+    <!--<color name="error_color2">#ff0000</color>-->
+
+    <color name="tools">#0D0D0D</color>
+    <color name="textColor">#131313</color>
+    <color name="backgroundLayout">#dd2c00</color>
+    <color name="backgroundNote">#4e342e</color>
+    <color name="navigation">#262626</color>
+</resources>

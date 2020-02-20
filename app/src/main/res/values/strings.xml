@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Data Processing</string>
+    <string name="appbar_scrolling_view_behavior"></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_send_as_email">Send as Mail</string>
+    <string name="title_activity_note">Edit Note</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <!--Import materialize.css-->
+	    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <!--Let browser know website is optimized for mobile-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="objectives">
+		        <h5 class="head">Objectives</h5>
+		        <p>At the end of this lesson student should be able to;</p>
+		        <li>define a table</li>
+		        <li>define data types</li>
+		        <li>explain table relationships</li>
+		        <li>describe the two types of keys</li>
+		        <li>state the benefit of using relationships</li>
+		    </div>
+		    <h4 class="center">DATA MODELLING</h4>
+		    <div class="divider"></div>
+		    <br>
+		    <h5 class="head">CREATING TABLES</h5>
+		    <p class="flow-text font">
+		    	A table is a database object that is used to store data about a particular subject, such as students, employees or products. A table consists of records and fields.
+		    </p>
+		    <p class="flow-text font">
+		    	Each record contains data about one instance of the table subject, such as a particular employee. A record is also commonly called a row or an instance.
+		    </p>
+		    <p class="flow-text font">
+		    	Each field contains data about one aspect of the table subject, such as a first name or e-mail address. A field is also commonly called a column or an attribute.
+		    </p>
+		    <p class="flow-text font">
+		    	A record consists of field values, such as OAU, Ltd. or someone@example.com. A field value is also commonly called a fact.
+		    </p>
+		    <p class="center">
+	            <img class="materialboxed responsive-img" src="img/std_tb.png" data-caption="Students Table">
+	            <caption><strong>Students Table</strong></caption>
+	        </p>
+	        <p class="font flow-text">
+	        	<strong class="bold">1</strong>.&nbsp;&nbsp;A Record<br>
+	        	<strong class="bold">2</strong>.&nbsp;&nbsp;A Field<br>
+	        	<strong class="bold">3</strong>.&nbsp;&nbsp;A Field Value<br>
+	        </p>
+		    <p class="flow-text font">
+		    	A database can contain many tables, each storing information about a different subject. Each table can contain many fields of different types of data, such as text, numbers, dates, and hyperlinks.
+		    </p>
+		    <br>
+		    <h5 class="head">TABLE AND FIELD PROPERTIES</h5>
+		    <p class="flow-text font">
+		    	Tables and fields also have properties that can set to control their characteristics or behaviour.
+		    </p>
+		    <p class="center">
+	            <img class="materialboxed responsive-img" src="img/tb_pt.png" data-caption="Table and Field Properties">
+	            <caption><strong>Table and Field Properties</strong></caption>
+	        </p>
+	        <h6 class="bold">A table open in Design View</h6>
+	        <p class="flow-text font">
+	        	<strong class="bold">1</strong>.&nbsp;&nbsp;Table Properties<br>
+	        	<strong class="bold">2</strong>.&nbsp;&nbsp;Field Properties
+	        </p>
+		    <p class="flow-text font">
+		    	In Access database, <strong class="bold">table properties</strong> are attributes of a table that affect the appearance or behaviour of the table as a whole. Table properties are set in the table's propety sheet, in Design view. For example, you can set a table's Default View property to specify how the table is displayed by default.
+		    </p>
+		    <p class="flow-text font">
+		    	A <strong class="bold">field property</strong> applies to a particular field in a table and defines one of the field's characteristics or an aspect of the field's behaviour. You can set some field properties in Datasheet view. You can also set any field property in Design view by using <strong class="bold">Field Properties</strong> pane.
+		    </p>
+		    <br>
+		    <h5 class="head">DATA TYPES</h5>
+		    <p class="flow-text font">
+		    	Every field has a data type. A field's data type indicates the kind of data that the field stores, such as large amounts of text or attached files.
+		    </p>
+		    <p class="center">
+	            <img class="materialboxed responsive-img" src="img/dt.png" data-caption="Data Type">
+	            <caption><strong>Data Type</strong></caption>
+	        </p>
+	        <p class="flow-text font">
+	        	A data type is a field property, but it differs from other field properties as follows:<br>
+	        	<strong class="bold">i</strong>.&nbsp;You set a field's data type in the table design grid, not in the Field Properties pane.<br>
+	        	<strong class="bold">ii</strong>.&nbsp;A field's data type determines wgat other properties the field has.<br>
+	        	<strong class="bold">iii</strong>.&nbsp;You must set a field's data type when you create the field.<br><br>
+	        	Data type denotes the type of information the field name will contain. If the field name holds a numeric value, the data type will be number.
+	        </p>
+	        <br>
+		    <h5 class="head">TABLE RELATIONSHIPS</h5>
+		    <p class="flow-text font">
+		    	Although each table stores data about a different subject, tables in a database usually data about subjects that are related to each other. For exapmle, a database might contain:<br>
+		    	<strong class="bold">i</strong>.&nbsp;A customers table that lists your company's customers and their addresses.<br>
+	        	<strong class="bold">ii</strong>.&nbsp;A products table that lists the products that you sell, including prices and pictures for each item.<br>
+	        	<strong class="bold">iii</strong>.&nbsp;An orders table that tracks customer orders.<br><br>
+	        	Because storing data about differents subjects in separate tables, you need some way to tie the data together so that you easily combine related data from those separate tables. To connect the data stored in different tables, you create relationships. A relationship is a logical connection between two tables that specifies fields that the tables have in common.
+		    </p>
+		</div>
+		<!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.materialboxed').materialbox();
+            });
+        </script>
+    </body>
+</html>

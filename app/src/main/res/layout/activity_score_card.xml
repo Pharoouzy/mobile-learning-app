@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#f14c39"
+    tools:context=".ScoreCardActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="Great job!"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:padding="13dp"
+            />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9 of 10 correct"
+                android:textAlignment="center"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:textColor="#EC0E7D"
+                    android:text="Review your answers"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/retMainBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_button_1"
+                    android:textColor="@android:color/white"
+                    android:text="Return to Main menu"
+                    android:padding="20dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/highscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HighScore 1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#f14c39"
+                />
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

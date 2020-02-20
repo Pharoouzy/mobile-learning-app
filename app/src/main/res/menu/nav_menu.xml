@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Home-->
+    <item
+        android:id="@+id/home"
+        android:checkable="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        />
+
+    <!--Quiz-->
+    <item
+        android:id="@+id/quiz"
+        android:checkable="true"
+        android:icon="@drawable/ic_lightbulb"
+        android:title="Quiz"
+        />
+
+    <!--Notes-->
+    <item
+        android:id="@+id/notes"
+        android:checkable="true"
+        android:icon="@drawable/ic_event_note"
+        android:title="My Notes"
+        />
+
+    <!--About Developer-->
+    <item
+        android:id="@+id/dev"
+        android:checkable="true"
+        android:icon="@drawable/ic_developer"
+        android:title="About Developer"
+        />
+
+    <!--Contact Me-->
+    <item
+        android:id="@+id/con"
+        android:checkable="true"
+        android:icon="@drawable/ic_contact_mail"
+        android:title="Need Help?"
+        />
+
+
+    <!--Exit-->
+    <item
+        android:id="@+id/exit"
+        android:checkable="true"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Exit"
+        />
+
+
+</menu>

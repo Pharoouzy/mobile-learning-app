@@ -1,0 +1,29 @@
+.p {
+	font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+	font-weight: 300; 
+	font-style: normal;
+	line-height: 1.43;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.font{
+	font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+	text-align: justify;
+	line-height: 1.55;
+}
+
+.list {
+	letter-spacing: 1px;
+	font-size: 1.4em;
+}
+
+.objectives{
+	font-size: 1.2em;
+}
+
+.head{
+	font-weight: bold;
+}
